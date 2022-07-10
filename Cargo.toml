@@ -1,0 +1,26 @@
+[package]
+name = "no-ms-auth"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.58"
+hyper = "0.14.20"
+serde_json = "1.0.82"
+serde_with = "2.0.0-rc.0"
+log = "0.4.17"
+log4rs = "1.1.1"
+
+[dependencies.serde]
+version = "1.0.138"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1.19.2"
+features = ["full"]
+
+[dependencies.axum]
+version = "0.5.11"
+features = ["headers"]
